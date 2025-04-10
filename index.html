@@ -223,11 +223,11 @@ FORMAT RESPONSE AS:
     </div>
 
     <script>
-        functioncopyPrompt() {
-            constpromptText = document.getElementById('promptText').innerText;
+        function copyPrompt() {
+            const promptText = document.getElementById('promptText').innerText;
             navigator.clipboard.writeText(promptText)
                 .then(() => {
-                    constmessage = document.getElementById('copyMessage');
+                    const message = document.getElementById('copyMessage');
                     message.style.display = 'block';
                     setTimeout(() => {
                         message.style.display = 'none';
