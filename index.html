@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tourism Revenue Opportunity Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800 px;
+            margin: 0 auto;
+            padding: 20 px;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30 px;
+        }
+        
+        .intro {
+            background-color: #EBF5FB;
+            border-left: 4 px solid #3498DB;
+            padding: 15 px;
+            margin-bottom: 20 px;
+            border-radius: 4 px;
+        }
+        
+        .prompt-container {
+            background-color: white;
+            border: 1 px solid #ddd;
+            padding: 20 px;
+            border-radius: 8 px;
+            margin: 20 px 0;
+            white-space: pre-wrap;
+            box-shadow: 0 2 px 4 px rgba (0,0,0,0.1);
+        }
+        
+        .button-container {
+            display: flex;
+            gap: 10 px;
+            margin: 20 px 0;
+        }
+        
+        button, a.button {
+            background-color: #0077B5;
+            color: white;
+            border: none;
+            padding: 10 px 20 px;
+            border-radius: 5 px;
+            cursor: pointer;
+            font-size: 16 px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3 s;
+        }
+        
+        button:hover, a.button:hover {
+            background-color: #005582;
+        }
+        
+        .footer {
+            margin-top: 30 px;
+            text-align: center;
+            font-size: 14 px;
+            color: #666;
+            border-top: 1 px solid #ddd;
+            padding-top: 20 px;
+        }
+        
+        .instructions {
+            background-color: #F8F9F9;
+            border: 1 px solid #ddd;
+            padding: 15 px;
+            border-radius: 8 px;
+            margin: 20 px 0;
+        }
+        
+        .instructions h3 {
+            color: #2E86C1;
+            margin-top: 0;
+        }
+        
+        .instructions ol {
+            padding-left: 20 px;
+        }
+        
+        #copyMessage {
+            display: none;
+            color: #27AE60;
+            text-align: center;
+            margin: 10 px 0;
+            font-weight: bold;
+        }
+        
+        .maori-terms {
+            background-color: #E8F8F5;
+            border: 1 px solid #ddd;
+            padding: 15 px;
+            border-radius: 8 px;
+            margin: 20 px 0;
+        }
+        
+        .maori-terms h3 {
+            color: #16A085;
+            margin-top: 0;
+        }
+        
+        .coaching-cta {
+            background-color: #F9EBEA;
+            border-left: 4 px solid #E74C3C;
+            padding: 20 px;
+            border-radius: 8 px;
+            margin: 30 px 0;
+        }
+        
+        .coaching-cta h3 {
+            color: #C0392B;
+            margin-top: 0;
+        }
+        
+        .coaching-cta ul {
+            margin-bottom: 20 px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Tourism Revenue Opportunity Finder</h1>
+        <p>Created by Michael Gibbons, AI Business Automation Coach</p>
+    </div>
+
+    <div class="intro">
+        <p>This AI prompt template helps tourism businesses identify their best additional revenue opportunities. Simply copy the prompt, customize it with your business details, and paste it into Claude or ChatGPT to receive personalized recommendations.</p>
+    </div>
+
+    <div class="prompt-container" id="promptText">
+TOURISM REVENUE OPPORTUNITY FINDER
+
+ACT AS: A tourism business advisor who understands cultural values and sustainability
+
+TASK: Help me identify the best additional revenue opportunities for my tourism business based on my existing strengths and resources.
+
+ABOUT MY BUSINESS:
+- [Brief description of your tourism business]
+- Primary offerings: [list your main tourism experiences/services]
+- Key assets: [list content, expertise, data your business has]
+- Current technology: [describe your digital capabilities]
+- Target market: [describe your main customer groups]
+- Available resources: [time, budget, and technical capabilities]
+- Cultural values: [any specific cultural elements to protect/promote]
+
+SEVEN REVENUE OPPORTUNITIES:
+1. Create Revenue With Your Existing Photos and Videos — sharing content through distribution channels
+2. Package Your Tourism Know-How Into Digital Products — turning expertise into guides or courses
+3. Create Premium Add-Ons With Personalized Experiences — offering customized premium options
+4. Extend Your Experiences to Virtual Visitors — developing virtual offerings
+5. Turn Your Visitor Insights Into Valuable Reports — converting visitor data into industry reports
+6. Share Your Success Through Coaching Others — helping other tourism businesses
+7. Drive 100% AI-Automated Sales & Marketing — setting up fully automated systems that work 24/7
+
+PROVIDE:
+- Top 2 most promising opportunities based on my specific situation
+- Simple step-by-step implementation plan with 30/60/90-day milestones
+- Required resources and estimated setup costs
+- How these opportunities support cultural integrity and kaitiakitanga
+- Potential challenges and practical solutions
+
+FORMAT RESPONSE AS:
+1. Best Opportunities For Your Business
+2. Simple Implementation Steps
+3. Resource Needs
+4. Cultural Values Alignment
+5. Challenge Solutions
+    </div>
+
+    <div class="button-container">
+        <button onclick="copyPrompt()">📋 Copy Prompt</button>
+        <a href="https://claude.ai/" target="_blank" class="button">🔗 Open Claude</a>
+        <a href="https://chat.openai.com/" target="_blank" class="button">🤖 Open ChatGPT</a>
+    </div>
+
+    <div id="copyMessage">
+        Prompt copied! Now click "Open Claude" or "Open ChatGPT" to paste it.
+    </div>
+
+    <div class="instructions">
+        <h3>How to Use This Prompt</h3>
+        <ol>
+            <li>Click the "Copy Prompt" button above</li>
+            <li>Click "Open Claude" or "Open ChatGPT" to open your preferred AI assistant</li>
+            <li>Before submitting, replace the text in [brackets] with your specific business information</li>
+            <li>Submit the prompt and receive your personalized revenue opportunity analysis</li>
+            <li>Implement the recommendations starting with the highest-potential opportunity</li>
+        </ol>
+    </div>
+
+    <div class="maori-terms">
+        <h3>Kupu Māori (Māori Terms)</h3>
+        <p><strong>Kaitiakitanga</strong> - Guardianship, stewardship</p>
+        <p><strong>Manaakitanga</strong> - Hospitality, kindness, generosity</p>
+        <p><strong>Mātauranga Māori</strong> - Māori knowledge and wisdom</p>
+        <p><strong>Korero</strong> - Speak, speech, conversation</p>
+    </div>
+
+    <div class="coaching-cta">
+        <h3>Need Expert Implementation Support?</h3>
+        <p>Creating additional revenue streams requires expertise and guidance. As an AI Business Automation Coach with 25+ years in cultural tourism, I offer personalized consultancy services to help you:</p>
+        <ul>
+            <li>Implement these AI side hustles with cultural integrity</li>
+            <li>Develop automated systems that work while you sleep</li>
+            <li>Transform your business operations for higher profitability</li>
+            <li>Protect cultural knowledge while embracing innovation</li>
+        </ul>
+        <p><a href="https://www.linkedin.com/in/michael-gibbons-9637789/" class="button" target="_blank" style="background-color: #16A085;">📩 Connect for Coaching Support</a></p>
+    </div>
+
+    <div class="footer">
+        <p>For more guidance on using AI in your tourism business, connect with me on <a href="https://www.linkedin.com/in/michael-gibbons-9637789/" target="_blank">LinkedIn</a></p>
+        <p>© Michael W Gibbons, AI Business Automation Coach 2025</p>
+        <p>#AITourismRevenue #CulturalIntegrity #TourismInnovation #AISideHustles</p>
+    </div>
+
+    <script>
+        functioncopyPrompt() {
+            constpromptText = document.getElementById('promptText').innerText;
+            navigator.clipboard.writeText(promptText)
+                .then(() => {
+                    constmessage = document.getElementById('copyMessage');
+                    message.style.display = 'block';
+                    setTimeout(() => {
+                        message.style.display = 'none';
+                    }, 3000);
+                })
+                .catch(err => {
+                    console.error('Failed to copy: ', err);
+                    alert('Failed to copy. Please try selecting and copying the text manually.');
+                });
+        }
+    </script>
+</body>
+</html>
